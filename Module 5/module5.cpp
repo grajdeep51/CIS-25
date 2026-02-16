@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 void showMenu() {
 cout << "1. Add\n2.View\n3. Exit\n";
 }
