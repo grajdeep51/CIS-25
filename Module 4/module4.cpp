@@ -4,23 +4,33 @@ using namespace std;
 
 int main() {
 
-float n1 n2 n3,
+    // Fixed: Added commas and semicolon to properly declare variables
+    float n1, n2, n3;
 
-cout << "Enter three numbers: ";
+    cout << "Enter three numbers: ";
 
-cin>>n1>n1>n3;
+    // Fixed: Corrected input operator (>> instead of >) and proper variables
+    cin >> n1 >> n2 >> n3;
 
-if(n1=n2 && n1>=n3
+    // Fixed: Changed assignment (=) to comparison (>=) and added parentheses + opening brace
+    if (n1 >= n2) {
+        
+        // Fixed: Nested if statement structure
+        if (n1 >= n3) {
+            cout << "Largest number: " << n1;
+        } else {
+            cout << "Largest number: " << n3;
+        }
 
-cout << "Largest number: " << n1;
+    } else {
 
-if(n2 == n1 && n2>=n3)
-{ cout << "Largest number: " << n1;
+        // Fixed: Nested if statement structure
+        if (n2 >= n3) {
+            cout << "Largest number: " << n2;
+        } else {
+            cout << "Largest number: " << n3;
+        }
+    }
 
-if(n3>=n1 && n3>=n2)
-
-cout << "Largest number: " << n2
-
+    return 0;
 }
-
-return 0;
